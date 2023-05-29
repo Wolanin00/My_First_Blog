@@ -17,10 +17,6 @@ from forms import CreatePostForm, RegisterForm, CommentForm
 EMAIL = "testowy100daysms@gmail.com"
 PASSWORD = 'REMOVED'
 
-# CREATING BY N-POINT JSON
-# test_blog = "https://api.npoint.io/c3947adcaad7da291c86"
-# posts = requests.get(test_blog).json()
-
 app = Flask(__name__)
 
 # Connect to Database
@@ -73,8 +69,8 @@ class Comment(db.Model):
     text = db.Column(db.Text, nullable=False)
 
 
-# with app.app_context():
-#     db.create_all()
+with app.app_context():
+    db.create_all()
 
 
 def admin_only(f):
