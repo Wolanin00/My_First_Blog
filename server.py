@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 # Connect to Database
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("EXTERNAL_DATABASE_URL", 'sqlite:///blog.db')
-app.config.from_envvar('SECRET_KEY')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 ckeditor = CKEditor(app)
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
