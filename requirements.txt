@@ -1,1 +1,8 @@
-
+flask_wtf
+wtforms
+flask_ckeditor
+flask_bootstrap
+flask_gravatar
+flask_login
+flask_sqlalchemy
+sqlalchemy
