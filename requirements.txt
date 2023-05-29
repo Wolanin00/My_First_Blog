@@ -6,3 +6,4 @@ flask_gravatar
 flask_login
 flask_sqlalchemy
 sqlalchemy
+gunicorn
