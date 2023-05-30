@@ -1,9 +1,13 @@
 # Mathew's Blog 📖
 Technologies: Python, JS, HTML, CSS, Flask, MySQL(SQLite)
 # Getting Started
-Live: https://mathew-blog.onrender.com/
+<h3>Live: https://mathew-blog.onrender.com/  </h3>
 
-To run the development server:
+```diff
+-After click wait some time (30 second) to deploy app.
+```
+
+<h4>To run the development server:</h4>
 
 - Go into `My_First_Blog` folder
 - Add "SECTER_KEY" to Environment variables
