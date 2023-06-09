@@ -2799,8 +2799,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0085A1;
-  --bs-btn-border-color: #0085A1;
+  --bs-btn-bg: #212529;
+  --bs-btn-border-color: #212529;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #007189;
   --bs-btn-hover-border-color: #006a81;
@@ -10676,6 +10676,7 @@ header.masthead {
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
+  filter: drop-shadow(0px 10px 20px black)
 }
 header.masthead:before {
   content: "";
