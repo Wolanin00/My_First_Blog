@@ -213,6 +213,15 @@ def delete_post(post_id):
     return redirect(url_for('home'))
 
 
+@app.route("/delete-comment/<comment_id>")
+@admin_only
+def delete_comment(comment_id):
+    comment_to_delete = db.session.query(Comment).get(comment_id)
+    db.session.delete(comment_to_delete)
+    db.session.commit()
+    return redirect(url_for('get_post', num=comment_to_delete.post_id))
+
+
 @app.route("/about")
 def get_about_page():
     return render_template("about.html")
